@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5e8; /* Light green background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    align-items: flex-start; /* Align content to the top */
+    height: 100vh;
+    position: relative;
+    
+    padding-top: 50px; /* SPACE SA TITLE FROM THE TOP */ 
+	
+}
+/* Title Styling */
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #4CAF50; /* Green color */
+    text-align: center;
+    font-size: 48px; /* Large font size for title */
+    text-transform: uppercase; /* Making the title uppercase */
+    margin-bottom: 29px;
+}
+
+/* Button Styling */
+button {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding: 15px;
+    background-color: #66bb6a; /* Cannabis green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%; /* Ensure buttons stretch to full container width */
+    max-width: 250px; /* Max width to maintain consistency */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+div {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    border-radius: 10px;
+    outline-color: #4CAF50;
+    font-size: 20px;
+    padding: 7px 10px;
+    color: #07830b;
+
+}
+input[type="text"] {
+    border-style: solid;
+    border-color:#4CAF50 ;
+    outline: #4CAF50;
+}
+    input[type="number"] {
+    
+        border-style: solid;
+        border-color:#4CAF50 ;
+        outline: #4CAF50;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+    transform: translateY(-5px); /* Slight upward movement */
+}
+input {
+    width: 30%;
+    height: 50px;
+    text-align: center;
+}
+
+.bullet {
+    position: absolute;
+    background-color: rgba(76, 175, 80, 0.5); /* Cannabis Green */
+    border-radius: 50%;
+    animation: moveBullet 10s infinite;
+    pointer-events: none;
+}
+
+.bullet-1 { width: 25px; height: 25px; top: 10%; left: 10%; animation-delay: 0s; }
+.bullet-2 { width: 20px; height: 20px; top: 15%; left: 30%; animation-delay: 1s; }
+.bullet-3 { width: 22px; height: 22px; top: 20%; left: 50%; animation-delay: 2s; }
+.bullet-4 { width: 18px; height: 18px; top: 30%; left: 70%; animation-delay: 3s; }
+.bullet-5 { width: 24px; height: 24px; top: 40%; left: 80%; animation-delay: 4s; }
+.bullet-6 { width: 20px; height: 20px; top: 50%; left: 15%; animation-delay: 5s; }
+.bullet-7 { width: 18px; height: 18px; top: 60%; left: 25%; animation-delay: 6s; }
+.bullet-8 { width: 26px; height: 26px; top: 70%; left: 35%; animation-delay: 7s; }
+.bullet-9 { width: 22px; height: 22px; top: 80%; left: 45%; animation-delay: 8s; }
+.bullet-10 { width: 25px; height: 25px; top: 90%; left: 55%; animation-delay: 9s; }
+.bullet-11 { width: 20px; height: 20px; top: 60%; left: 65%; animation-delay: 10s; }
+.bullet-12 { width: 18px; height: 18px; top: 40%; left: 75%; animation-delay: 11s; }
+.bullet-13 { width: 22px; height: 22px; top: 20%; left: 85%; animation-delay: 12s; }
+.bullet-14 { width: 24px; height: 24px; top: 30%; left: 95%; animation-delay: 13s; }
+.bullet-15 { width: 20px; height: 20px; top: 10%; left: 70%; animation-delay: 14s; }
+.bullet-16 { width: 18px; height: 18px; top: 25%; left: 20%; animation-delay: 15s; }
+.bullet-17 { width: 22px; height: 22px; top: 45%; left: 10%; animation-delay: 16s; }
+.bullet-18 { width: 20px; height: 20px; top: 65%; left: 80%; animation-delay: 17s; }
+.bullet-19 { width: 23px; height: 23px; top: 55%; left: 40%; animation-delay: 18s; }
+.bullet-20 { width: 18px; height: 18px; top: 75%; left: 50%; animation-delay: 19s; }
+
+@keyframes moveBullet {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}

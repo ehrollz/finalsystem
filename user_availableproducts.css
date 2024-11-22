@@ -1,0 +1,271 @@
+/* Modal CSS */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+}
+
+#balance{
+    width: 60px;
+    text-align: left;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    justify-content: center;
+}
+
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for images in the modal */
+.modal-content img {
+    width: 100%; /* Make image responsive */
+    max-width: 200px; /* Max width for images */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Text styling inside modal */
+.modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-content p {
+    margin: 10px 0;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    border-radius: 10px;
+    outline-color: #4CAF50;
+    font-size: 20px;
+    padding: 7px 10px;
+    color: #07830b;
+
+}
+
+
+input {
+    width: 20%;
+    height: 40px;
+    text-align: center;
+}
+
+input[type="text"] {
+    border-style: solid;
+    border-color:#4CAF50 ;
+    outline: #4CAF50;
+}
+input[type="number"] {
+    
+    border-style: solid;
+    border-color:#4CAF50 ;
+    outline: #4CAF50;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5e8; /* Light green background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    height: 100vh;
+    position: relative;
+
+    padding-top: 50px; /* SPACE SA TITLE FROM THE TOP */ 
+}
+    
+/* Title Styling */
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #4CAF50; /* Green color */
+    text-align: center;
+    font-size: 48px; /* Large font size for title */
+    margin-bottom: 40px; /* Spacing below the title */
+    text-transform: uppercase; /* Making the title uppercase */
+}
+
+/* Table Styling */
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#dataTable th, #dataTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#dataTable th {
+    background-color: #66bb6a; /* Cannabis green */
+    color: white;
+}
+
+#dataTable tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row colors */
+}
+
+/* No data message */
+#dataTable tbody tr td {
+    text-align: center;
+    color: #888; /* Light grey color for empty state */
+}
+
+/* Action Buttons Styling */
+#dataTable td button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    margin-right: 8px; /* Space between buttons */
+}
+
+#dataTable td .editBtn {
+    background-color: #66bb6a; /* Lighter green */
+    color: white;
+}
+
+#dataTable td .delete {
+    background-color: #388e3c; /* Darker green for delete */
+    color: white;
+}
+
+/* Hover Effect for Buttons */
+#dataTable td .editBtn:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+}
+
+#dataTable td .delete:hover {
+    background-color: #2c6f2d; /* Darker green on hover */
+    transform: translateY(-3px); /* Slight upward movement */
+}
+
+/* Button Styling */
+button {
+    padding: 15px;
+    background-color: #66bb6a; /* Cannabis green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%; /* Ensure buttons stretch to full container width */
+    max-width: 250px; /* Max width to maintain consistency */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 3px;
+}s
+
+/* Hover Effect for Buttons */
+button:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+    transform: translateY(-5px); /* Slight upward movement */
+}
+
+/* Logout Button Styling */
+.logout-btn {
+    background-color: #e74c3c; /* Red for logout */
+}
+
+.logout-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+
+/* Interactive Background - Cannabis Bubbles */
+.interactive-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.bullet {
+    position: absolute;
+    background-color: rgba(76, 175, 80, 0.5); /* Cannabis Green */
+    border-radius: 50%;
+    animation: moveBullet 10s infinite;
+    pointer-events: none;
+}
+
+
+
+.bullet-1 { width: 25px; height: 25px; top: 10%; left: 10%; animation-delay: 0s; }
+.bullet-2 { width: 20px; height: 20px; top: 15%; left: 30%; animation-delay: 1s; }
+.bullet-3 { width: 22px; height: 22px; top: 20%; left: 50%; animation-delay: 2s; }
+.bullet-4 { width: 18px; height: 18px; top: 30%; left: 70%; animation-delay: 3s; }
+.bullet-5 { width: 24px; height: 24px; top: 40%; left: 80%; animation-delay: 4s; }
+.bullet-6 { width: 20px; height: 20px; top: 50%; left: 15%; animation-delay: 5s; }
+.bullet-7 { width: 18px; height: 18px; top: 60%; left: 25%; animation-delay: 6s; }
+.bullet-8 { width: 26px; height: 26px; top: 70%; left: 35%; animation-delay: 7s; }
+.bullet-9 { width: 22px; height: 22px; top: 80%; left: 45%; animation-delay: 8s; }
+.bullet-10 { width: 25px; height: 25px; top: 90%; left: 55%; animation-delay: 9s; }
+.bullet-11 { width: 20px; height: 20px; top: 60%; left: 65%; animation-delay: 10s; }
+.bullet-12 { width: 18px; height: 18px; top: 40%; left: 75%; animation-delay: 11s; }
+.bullet-13 { width: 22px; height: 22px; top: 20%; left: 85%; animation-delay: 12s; }
+.bullet-14 { width: 24px; height: 24px; top: 30%; left: 95%; animation-delay: 13s; }
+.bullet-15 { width: 20px; height: 20px; top: 10%; left: 70%; animation-delay: 14s; }
+.bullet-16 { width: 18px; height: 18px; top: 25%; left: 20%; animation-delay: 15s; }
+.bullet-17 { width: 22px; height: 22px; top: 45%; left: 10%; animation-delay: 16s; }
+.bullet-18 { width: 20px; height: 20px; top: 65%; left: 80%; animation-delay: 17s; }
+.bullet-19 { width: 23px; height: 23px; top: 55%; left: 40%; animation-delay: 18s; }
+.bullet-20 { width: 18px; height: 18px; top: 75%; left: 50%; animation-delay: 19s; }
+
+@keyframes moveBullet {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.2);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+
